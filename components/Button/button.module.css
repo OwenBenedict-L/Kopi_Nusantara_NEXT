@@ -1,0 +1,24 @@
+.btnKeAtas {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fff;
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.btnKeAtas:hover {
+    background-color: #ddd; 
+    transform: translateY(-5px);
+}

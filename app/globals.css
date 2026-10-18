@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f6eede;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fas.fa-bars.fa-2x {
+    font-size: 18px;
+}
+
+#notif-container {
+    position: fixed;
+    bottom: 95px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.notif-message {
+    background-color: #5c3a21;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.notif-message.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (min-width: 576px) {
+    .fas.fa-bars.fa-2x {
+        display: none;
+    }
+}

@@ -1,0 +1,77 @@
+.tentangSection {
+    margin: 20px 10px 10px;
+}
+
+.tentangContainer {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 2% 4%;
+    gap: 30px;
+    align-items: center;
+    width: fit-content;
+    background-color: rgb(224, 216, 190);
+}
+
+.tentangImg {
+    width: fit-content;
+}
+
+.tentangImg img {
+    display: block;
+    margin: 0;
+    max-width: 130px;
+}
+
+.tentangText {
+    text-align: justify;
+}
+
+.tentangText h2 {
+    font-size: 150%;
+    margin-bottom: 1%;
+}
+
+.tentangText p {
+    font-size: 12px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    border: 3px solid rgb(58, 52, 48);
+    background-color: rgb(172, 127, 68);
+    border-radius: 35%;
+}
+
+@media (min-width: 576px) {
+    .tentangContainer {
+        gap: 50px;
+    }
+    
+    .tentangImg {
+        max-width: 200px;
+    }
+    
+    .tentangText p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .tentangContainer {
+        padding: 2% 4%;
+        gap: 70px;
+    }
+    
+    .tentangImg {
+        width: fit-content;
+    }
+    
+    .tentangImg img {
+        max-width: 300px;
+    }
+    
+    .tentangText p {
+        font-size: 16px;
+    }
+}
